@@ -1,0 +1,26 @@
+{
+  "name": "rabi-hillel",
+  "version": "0.1.0",
+  "private": true,
+  "dependencies": {
+    "dropbox": "^3.0.4",
+    "es6-promise": "^4.2.4",
+    "express": "^4.16.2",
+    "isomorphic-fetch": "^2.2.1",
+    "jss-rtl": "^0.2.1",
+    "material-ui": "^1.0.0-beta.33",
+    "material-ui-icons": "^1.0.0-beta.17",
+    "react": "^16.2.0",
+    "react-dom": "^16.2.0",
+    "react-router-dom": "^4.2.2",
+    "react-scripts": "1.1.1",
+    "semantic-ui-css": "^2.2.14",
+    "semantic-ui-react": "^0.78.2"
+  },
+  "scripts": {
+    "start": "react-scripts start",
+    "build": "react-scripts build",
+    "test": "react-scripts test --env=jsdom",
+    "eject": "react-scripts eject"
+  }
+}
