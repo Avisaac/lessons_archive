@@ -10,34 +10,19 @@ import AppHeaderMenu from './components/appHeader';
 require('isomorphic-fetch');
 
 
-var Dropbox = require('dropbox').Dropbox;
-var dbx = new Dropbox({ accessToken: 'gkvAmhEckZAAAAAAAAAANkXMvmykkkK9jM91ULBgtQ0QwYVPaZvb8wHYBc97QP88' });
-dbx.filesListFolder({path: ''})
-  .then(function(response) {
-    console.log(response);
-  })
-  .catch(function(error) {
-    console.log(error);
-  });
-dbx.usersGetCurrentAccount()
-  .then(function(response) {
-    console.log(response);
-  })
-  .catch(function(error) {
-    console.error(error);
-  });
-
 
 const theme = createMuiTheme({
+  palette: {
+    type: 'light',
+  },
   direction: 'rtl', // Both here and <body dir="rtl">
 });
 
 class App extends Component {
   render() {
     return (
-      
       <MuiThemeProvider theme={theme}>
-        <div dir="rtl">
+        <div dir="rtl" style={{background: '#F5F5F5', position: 'absolute', height: '100%', width: '100%'}}>
           <Router>
           <div>
             <AppHeaderMenu></AppHeaderMenu>
