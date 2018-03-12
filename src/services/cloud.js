@@ -33,9 +33,8 @@ class Cloud {
 
     static getFolderByPath(path, callback) {
 
-        let pathParts = path.split("/");
-        pathParts = pathParts.reduce(part => part.length)
-
+        let pathParts = path.split("/").filter(part => part.length)
+        callback(pathParts[pathParts.length - 1])
         // Do lot of getCurrentFiles and then by parts of path get the folder
     }
 }
